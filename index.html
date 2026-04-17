@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.T.S | Azimut Techno Service</title>
+  <meta name="description" content="A.T.S Azimut Techno Service - Climatisation, informatique, assainissement, fournitures de materiel et prestations de service a Ouagadougou.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="badge">Entreprise locale - Ouagadougou, Burkina Faso</p>
+      <h1>A.T.S <span>Azimut Techno Service</span></h1>
+      <p class="hero__subtitle">
+        Climatisation - Informatique - Assainissement<br>
+        Fournitures de Materiel - Prestation de Service - Commerce General
+      </p>
+      <div class="hero__actions">
+        <a href="tel:+22670237369">Appeler maintenant</a>
+        <a href="https://wa.me/22670237369" target="_blank" rel="noopener noreferrer">WhatsApp direct</a>
+        <a class="secondary" href="#services">Voir nos services</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section card image-card">
+      <div class="container">
+        <h2>Presentation</h2>
+        <p>
+          A.T.S accompagne particuliers, entreprises et structures avec des solutions fiables
+          en climatisation, informatique, hygiene et maintenance. Notre objectif: un service rapide,
+          propre et durable.
+        </p>
+        <img src="IMG-20260415-WA0097.jpg" alt="Carte de presentation A.T.S Azimut Techno Service">
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Nos domaines d'activite</h2>
+        <div class="grid">
+          <article class="service">
+            <h3>Climatisation</h3>
+            <p>Installation, entretien, depannage de climatiseurs et equipements froid.</p>
+          </article>
+          <article class="service">
+            <h3>Informatique</h3>
+            <p>Maintenance, assistance, installation de materiel et solutions numeriques.</p>
+          </article>
+          <article class="service">
+            <h3>Assainissement</h3>
+            <p>Interventions d'hygiene, nettoyage professionnel et services d'assainissement.</p>
+          </article>
+          <article class="service">
+            <h3>Fournitures</h3>
+            <p>Fourniture de materiel technique, informatique et besoins generaux.</p>
+          </article>
+          <article class="service">
+            <h3>Prestations</h3>
+            <p>Solutions sur mesure pour particuliers, professionnels et administrations.</p>
+          </article>
+          <article class="service">
+            <h3>Commerce General</h3>
+            <p>Vente et livraison de produits selon vos besoins et votre activite.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="devis" class="section quote">
+      <div class="container">
+        <h2>Demande de devis et prestation</h2>
+        <p class="quote__intro">
+          Remplissez ce formulaire. Vous pourrez envoyer votre demande en 1 clic sur WhatsApp
+          ou par email.
+        </p>
+        <form id="quote-form" class="quote-form">
+          <div class="form-grid">
+            <label>
+              Nom complet
+              <input id="fullName" name="fullName" type="text" placeholder="Votre nom" required>
+            </label>
+            <label>
+              Telephone
+              <input id="phone" name="phone" type="tel" placeholder="+226..." required>
+            </label>
+            <label>
+              Email
+              <input id="email" name="email" type="email" placeholder="vous@email.com">
+            </label>
+            <label>
+              Type de demande
+              <select id="requestType" name="requestType" required>
+                <option value="Devis">Devis</option>
+                <option value="Prestation">Prestation</option>
+                <option value="Information">Information</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </label>
+            <label>
+              Service concerne
+              <select id="serviceType" name="serviceType" required>
+                <option value="Climatisation">Climatisation</option>
+                <option value="Informatique">Informatique</option>
+                <option value="Assainissement">Assainissement</option>
+                <option value="Fournitures">Fournitures</option>
+                <option value="Commerce general">Commerce general</option>
+                <option value="Multi-services">Multi-services</option>
+              </select>
+            </label>
+            <label>
+              Budget estimatif (optionnel)
+              <input id="budget" name="budget" type="text" placeholder="Ex: 200 000 FCFA">
+            </label>
+          </div>
+          <label>
+            Description du besoin
+            <textarea id="details" name="details" rows="5" placeholder="Expliquez votre besoin..." required></textarea>
+          </label>
+          <div class="quote-actions">
+            <button type="button" id="send-whatsapp">Envoyer sur WhatsApp</button>
+            <button type="button" id="send-email" class="secondary-btn">Envoyer par Email</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="owner">Responsable: <strong>KABORE Kouka Celestin</strong></p>
+        <div class="phones">
+          <a href="tel:+22670237369">+226 70 23 73 69</a>
+          <a href="tel:+22676237369">+226 76 23 73 69</a>
+          <a href="tel:+22678239319">+226 78 23 93 19</a>
+          <a href="https://wa.me/22670237369" target="_blank" rel="noopener noreferrer">WhatsApp principal</a>
+          <a href="mailto:ats.azimut.service@gmail.com">ats.azimut.service@gmail.com</a>
+        </div>
+        <p class="city">Ouagadougou, Burkina Faso</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 A.T.S Azimut Techno Service - Tous droits reserves.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
