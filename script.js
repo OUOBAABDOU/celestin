@@ -5,6 +5,51 @@ const form = document.getElementById("quote-form");
 const sendWhatsappBtn = document.getElementById("send-whatsapp");
 const sendEmailBtn = document.getElementById("send-email");
 
+// Mobile menu toggle
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu");
+const navbar = document.getElementById("navbar");
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+
+  // Close menu when clicking on a link
+  navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  });
+}
+
+// Navbar scroll effect
+if (navbar) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+}
+
+// Back to top button
+const backToTop = document.getElementById("back-to-top");
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 function getFormMessage() {
   if (!form.checkValidity()) {
     form.reportValidity();
