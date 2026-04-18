@@ -11,6 +11,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">A.T.S</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#devis">Devis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
   <header class="hero">
     <div class="hero__overlay"></div>
     <div class="container hero__content">
@@ -135,7 +153,7 @@
               <input id="phone" name="phone" type="tel" placeholder="+226..." required>
             </label>
             <label>
-              Email
+              Email (optionnel)
               <input id="email" name="email" type="email" placeholder="vous@email.com">
             </label>
             <label>
@@ -176,7 +194,68 @@
       </div>
     </section>
 
-    <section class="section contact">
+    <section id="temoignages" class="section testimonials">
+      <div class="container">
+        <h2>Ce que disent nos clients</h2>
+        <p class="testimonials-intro">La satisfaction de nos clients est notre priorité.</p>
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Installation climatisation rapide et professionnelle. Équipe sérieuse et prix compétitif. Je recommande A.T.S pour tous vos travaux."</p>
+            <div class="testimonial-author">
+              <strong>Amadou K.</strong>
+              <span>Propriétaire - Ouagadougou</span>
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Intervention informatique en urgence pour mon entreprise. Problème résolu en moins d'une heure. Service impeccable!"</p>
+            <div class="testimonial-author">
+              <strong>Sophie B.</strong>
+              <span>Directrice - Entreprise locale</span>
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Travaux d'électricité bâtiment conformes aux normes. Équipe compétente et à l'écoute. Devis respecté, délais tenus."</p>
+            <div class="testimonial-author">
+              <strong>Jean P.</strong>
+              <span>Promoteur immobilier</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2>Questions fréquentes</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Quels sont vos délais d'intervention ?</summary>
+            <p>Nous intervenons généralement sous 24 à 48h pour les demandes urgentes. Pour les installations planifiées, nous fixons un rendez-vous selon vos disponibilités.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Proposez-vous des garanties sur vos installations ?</summary>
+            <p>Oui, toutes nos installations sont garanties. La durée varie selon le type de prestation (6 mois à 2 ans). Nous proposons aussi des contrats de maintenance.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Comment obtenir un devis gratuit ?</summary>
+            <p>Remplissez notre formulaire en ligne ou contactez-nous directement. Nous pouvons aussi nous déplacer sur site pour une évaluation précise si nécessaire.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Intervenez-vous en dehors de Ouagadougou ?</summary>
+            <p>Notre zone d'intervention principale est Ouagadougou et sa périphérie. Pour des projets plus éloignés, contactez-nous pour étudier ensemble la faisabilité.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Acceptez-vous les paiements mobiles ?</summary>
+            <p>Oui, nous acceptons les paiements par Orange Money, Moov Money, ainsi que les virements bancaires et espèces.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
       <div class="container">
         <h2>Contact</h2>
         <p class="owner">Responsable: <strong>KABORE Kouka Celestin</strong></p>
@@ -194,9 +273,37 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 A.T.S Azimut Techno Service - Tous droits reserves.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>A.T.S Azimut Techno Service</h3>
+          <p>Climatisation - Informatique - Électricité - Assainissement</p>
+          <p>Ouagadougou, Burkina Faso</p>
+        </div>
+        <div class="footer-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#services">Nos services</a></li>
+            <li><a href="#devis">Demande de devis</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="tel:+22670237369">+226 70 23 73 69</a></p>
+          <p><a href="mailto:ats.azimut.service@gmail.com">ats.azimut.service@gmail.com</a></p>
+          <div class="footer-social">
+            <a href="https://wa.me/22670237369" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 A.T.S Azimut Techno Service - Tous droits réservés.</p>
+        <p class="footer-credits">Site créé avec soin pour votre satisfaction</p>
+      </div>
     </div>
   </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
